@@ -1,0 +1,9 @@
+pandas==1.5.3
+numpy==1.23.5
+seaborn==0.12.2
+pillow==9.4.0
+scikit-learn==1.2.1
+scipy==1.10.0
+matplotlib==3.7.1
+tqdm==4.64.1
+ruptures==1.1.7
