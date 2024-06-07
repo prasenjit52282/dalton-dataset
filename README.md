@@ -1,13 +1,30 @@
 # DALTON-Dataset
+We present spatiotemporal measurements of air quality from 30 indoor sites over six months during summer and winter seasons. The sites are geographically located across four regions of type: rural, suburban, and urban, covering the typical low to middle-income population in India. The dataset contains various types of indoor environments (e.g., studio apartments, classrooms, research laboratories, food canteens, and residential households), and can provide the basis for data-driven learning model research aimed at coping with unique pollution patterns in developing countries.
 
 <p align="center">
       <img src="./Assets/system_diagram.png" width="90%"/><br><strong>Fig.1:</strong> Overview of our extensive field study and data collection with multiple air quality monitors in a typical indoor environment.
 </p>
+In the dataset we have given comprehensive metadata for all the sensors and their placemant. The collected attributes from each sensor is as shown below.
 
-We present spatiotemporal measurements of air quality from 30 indoor sites over six months during summer and winter seasons. The sites are geographically located across four regions of type: rural, suburban, and urban, covering the typical low to middle-income population in India. The dataset contains various types of indoor environments (e.g., studio apartments, classrooms, research laboratories, food canteens, and residential households), and can provide the basis for data-driven learning model research aimed at coping with unique pollution patterns in developing countries.
-<br/>
+| `Parameters` | `Description`                                                                                |
+|------------|--------------------------------------------------------------------------------------------|
+| ts         | Timestamp (yyyy/mm/dd HH:MM:SS) from the ESP32 MCU after reading sensor values             |
+| T          | Temperature reading of the indoor environment in celsius at time ts                        |
+| H          | Humidity reading of the indoor environment in percentage at time ts                        |
+| PMS1       | Less than 1 micron dust particle readings in parts per million (ppm) at time ts            |
+| PMS2_5     | Less than 2.5 micron dust particle readings in ppm at time ts                              |
+| PMS10      | Less than 10 micron dust particle readings in ppm at time ts                               |
+| CO2        | Carbon dioxide concentration in ppm at time ts                                             |
+| NO2        | Nitrogen dioxide concentration in ppm at time ts                                           |
+| CO         | Carbon monoxide concentration in ppm at time ts                                            |
+| VoC        | Volatile organic compounds concentration in parts per billion (ppb) at time ts             |
+| C2H5OH     | Ethyl alcohol concentration in ppb at time ts                                              |
+| ID         | Unique identifier of the deployed \ourmethod{} sensor                                      |
+| Loc        | Location of DALTON sensor in the indoor environment                                        |
+| Customer   | The name of the occupant who participated during the sensor deployment in his indoor space |
+| Ph         | Phone number of the customer for urgent contact. Replaced with XXXX to preserve privacy    |
 
-# Prerequisite
+# Installation
 To install the required packages in your python(>=3.11) environment you need to run the below commands:
 ```bash
 git clone https://github.com/prasenjit52282/dalton-dataset.git
