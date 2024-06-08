@@ -1,7 +1,9 @@
 #folders
 /Data
 /Raw
-
+/Processed
+/Features
+/Merged
 
 # files and temp folders
 /**/__pycache__

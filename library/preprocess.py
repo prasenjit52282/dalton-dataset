@@ -11,7 +11,8 @@ def preprocess_fn(d,date):
     Output[DataFrame]:  cleaned data
     """
     #step1. remove all unnecessary columns keeping only pollutants
-    d_pol=d.drop(columns=['Customer','ID','Loc','Ph','Date'])
+    # d_pol=d.drop(columns=['Customer','ID','Loc','Ph','Date'])
+    d_pol=d.drop(columns=['Date'])
     
     #step2. assigning timestamp(ts) as index and sorting data
     #very rarely one sensor has multiple entries for same timestamp

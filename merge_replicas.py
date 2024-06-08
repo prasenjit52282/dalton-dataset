@@ -9,7 +9,7 @@ args = parser.parse_args()
 customer=args.customer
 
 #Gathering all replica files
-files=glob.glob(f"./DATA/{customer}/replicas/*")
+files=glob.glob(f"./Data/{customer}/*.csv")
 
 #Concatinating all files
 df=pd.concat([pd.read_csv(f) for f in files],axis=0)
@@ -18,5 +18,5 @@ df_customer=df[df.Customer==customer].reset_index(drop=True)
 #removing all duplicate entires from the replicas
 df_customer.drop_duplicates(inplace=True)
 #dumping the unique entries
-df_customer.to_csv(f"./DATA/{customer}/data_{customer}.csv",index=False)
-print("Replicas merged")
+df_customer.to_csv(f"./Merged/data_{customer}.csv",index=False)
+print(f"Merged for {customer}")

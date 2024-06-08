@@ -13,14 +13,14 @@ args = parser.parse_args()
 customer=args.customer
 workers=args.workers
 
-df=pd.read_csv(f"./DATA/{customer}/data_{customer}.csv")
+df=pd.read_csv(f"./Merged/data_{customer}.csv")
 
 df['Date']=df.ts.apply(lambda e: e.split()[0])
 params=list(df.groupby(['Date','ID','Loc']))
 
 
 #Making parent directory
-parent_dir=f"./DATA/{customer}/processed"
+parent_dir=f"./Processed/{customer}"
 os.makedirs(parent_dir,exist_ok=True)
 
 
@@ -28,4 +28,4 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
     results=list(tqdm(executor.map(lambda e:process_for_one_device_at_date(*e[0],e[1],parent_dir), params),
                       total=len(params)))
 
-print("Completed")
+print(f"Completed for {customer}")
