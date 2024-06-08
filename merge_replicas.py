@@ -18,5 +18,5 @@ df_customer=df[df.Customer==customer].reset_index(drop=True)
 #removing all duplicate entires from the replicas
 df_customer.drop_duplicates(inplace=True)
 #dumping the unique entries
-df_customer.to_csv(f"./Merged/data_{customer}.csv",index=False)
+df_customer[df_customer['ts'].notna()].to_csv(f"./Merged/data_{customer}.csv",index=False)
 print(f"Merged for {customer}")

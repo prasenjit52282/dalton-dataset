@@ -16,7 +16,7 @@ def preprocess_fn(d,date):
     
     #step2. assigning timestamp(ts) as index and sorting data
     #very rarely one sensor has multiple entries for same timestamp
-    d_pol['ts']=d_pol.ts.apply(pd.to_datetime)
+    d_pol['ts']=d_pol.ts.apply(lambda e:pd.to_datetime(e).tz_localize(None))
     d_pol.drop_duplicates(subset=['ts'],inplace=True) 
     d_pol.set_index('ts',inplace=True)
     d_pol.sort_index(inplace=True)
