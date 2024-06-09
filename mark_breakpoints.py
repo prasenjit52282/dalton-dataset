@@ -15,7 +15,7 @@ customer=args.customer
 workers=args.workers
 plot=args.plot
 
-folders=glob.glob(f"./DATA/{customer}/processed/*")
+folders=glob.glob(f"./Processed/{customer}/*")
 
 if plot:
     for folder in tqdm(folders):

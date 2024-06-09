@@ -35,7 +35,7 @@ def detect_breakpoints(df,PEN=PEN,use_algo='KLCPD',plot=False,scaled=True,title=
     signal_norm=get_normalized_signals(df_10sec)
 
     if use_algo=='KLCPD':
-        algo=rpt.KernelCPD(kernel='rbf',min_size=(30*60/10)).fit(signal_norm.values)
+        algo=rpt.KernelCPD(kernel='rbf',min_size=(15*60/10)).fit(signal_norm.values)
     elif use_algo=='PELT':
         algo=rpt.Pelt(model='rbf').fit(signal_norm.values)
     idx=algo.predict(pen=PEN)[:-1] #ignoring end bkpt 
