@@ -13,10 +13,10 @@ args = parser.parse_args()
 customer=args.customer
 workers=args.workers
 
-files=glob.glob(f"./DATA/{customer}/processed/*/*.csv")
+files=glob.glob(f"./Processed/{customer}/*/*.csv")
 
 #Making parent directory
-parent_dir=f"./DATA/{customer}/feat"
+parent_dir=f"./Features/{customer}"
 os.makedirs(parent_dir,exist_ok=True)
 
 
