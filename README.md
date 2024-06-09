@@ -47,24 +47,62 @@ Execute the following commands to preprocess the air quality measurements from R
 
 # File Structure
 ```
-Assets
-Data
-    └── {file}.py
-library
-    └── __init__.py
-    └── base_metrics.py
-    └── breakpoints.py
-    └── constants.py
-    └── feat.py
-    └── preprocess.py
+.
+├── ./Assets
+│   └── ./Assets/system_diagram.png
+├── ./Data
+│   ├── ./Data/A1
+│   │   └── ./Data/A1/101_Study_Desk.csv
+│   ├── ./Data/H1
+│   │   ├── ./Data/H1/41_Kitchen.csv
+│   │   ├── ./Data/H1/42_Bedroom_beside.csv
+│   │   ├── ./Data/H1/43_Dining_left.csv
+│   │   ├── ./Data/H1/44_Dining_right.csv
+│   │   └── ./Data/H1/45_Parent_room.csv
+│   └── ./Data/[Site]                      /* Directories
+│       └── ./Data/[Site]/[ID_Loc].csv
+├── ./Merged
+│   ├── ./Merged/data_A1.csv
+│   └── ./Merged/data_[Site].csv           /* Files
+├── ./Processed
+│   ├── ./Processed/A1
+│   │   ├── ./Processed/A1/2023_06_10
+│   │   │   └── ./Processed/A1/2023_06_10/101_Study_Desk.csv
+│   │   ├── ./Processed/A1/2023_06_11
+│   │   │   └── ./Processed/A1/2023_06_11/101_Study_Desk.csv
+│   │   ├── ./Processed/A1/2023_06_12
+│   │   │   └── ./Processed/A1/2023_06_12/101_Study_Desk.csv
+│   │   ├── ./Processed/A1/2023_06_13
+│   │   │   └── ./Processed/A1/2023_06_13/101_Study_Desk.csv
+│   │   ├── ./Processed/A1/2023_06_14
+│   │   │   └── ./Processed/A1/2023_06_14/101_Study_Desk.csv
+│   │   └── ./Processed/A1/2023_06_16
+│   │       └── ./Processed/A1/2023_06_16/101_Study_Desk.csv
+│   └── ./Processed/[Site]                 /* Directories
+│       └── ./Processed/[Site]/[Date]
+│           └── ./Processed/[Site]/[Date]/[ID_Loc].csv
+├── ./library
+│   ├── ./library/base_metrics.py
+│   ├── ./library/breakpoints.py
+│   ├── ./library/constants.py
+│   ├── ./library/feat.py
+│   ├── ./library/__init__.py
+│   └── ./library/preprocess.py
+├── ./merge_replicas.py
+├── ./preprocess_data.py
+├── ./mark_breakpoints.py
+├── ./compute_feat.py
+├── ./file_structure.txt
+├── ./merge.sh
+├── ./preprocess.sh
+├── ./breakpoint.sh
+├── ./features.sh
+├── ./Makefile
+├── ./LICENSE
+├── ./README.md
+└── ./requirements.txt
 
-merge_replicas.py
-preprocess_data.py
-mark_breakpoints.py
-compute_feat.py
-requirements.txt
-.gitignore
-LICENSE
+564 directories, 1454 files
 ```
 
 # Reference
