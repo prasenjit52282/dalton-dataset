@@ -122,38 +122,38 @@ make preprocess
 
 
 # Dataset Details
-|Site ID|Dev IDs                                                                                                                                |#Dev|Site Area (sqft)|Floor Plan|#F/ #M|Duration (Hrs)|#Samples|Annot|Participants               |
-|-------|---------------------------------------------------------------------------------------------------------------------------------------|--------|----------------|----------|--------------|-------------------|--------|-----------|---------------------------|
-|H1     |41 42 43 44 45 |5       |1100            |:heavy_check_mark:       |1/1           |772                |11402870|:heavy_check_mark:        |P1 P2                      |
-|H2     |13 17 16 14 12 15 |7       |1100            |:heavy_check_mark:       |2/2           |469                |8333689 |:heavy_check_mark:        |P3 P4 P5 P6                |
-|H3     |62 63 61 |3       |1000            |:heavy_check_mark:       |1/1           |463                |4041058 |:heavy_check_mark:        |P7 P8                      |
-|H4     |13 11 12 15 14 |5       |1200            |:heavy_check_mark:       |1/1           |2635               |24021924|:x:         |P9 P10                     |
-|H5     |22 21 |2       |1200            |:heavy_check_mark:       |1/1           |2634               |7395189 |:x:         |P11 P12                    |
-|H6     |114 113 111 112 115 |5       |400             |:heavy_check_mark:       |1/1           |218                |3188644 |:heavy_check_mark:        |P13 P14                    |
-|H7     |71 72 |2       |400             |:x:        |1/1           |366                |2306882 |:heavy_check_mark:        |P15 P16                    |
-|H8     |84 81 83 82 85 |5       |1100            |:x:        |2/1           |570                |8676832 |:heavy_check_mark:        |P1 P17 P18                 |
-|H9     |98 99 |2       |300             |:x:        |1/1           |768                |3894082 |:heavy_check_mark:        |P19 P20                    |
-|H10    |104 103 |2       |600             |:x:        |2/2           |25                 |70554   |:x:         |P21 P22 P23 P24            |
-|H11    |107 106 |2       |600             |:x:        |1/2           |86                 |60098   |:x:         |P25 P26 P27                |
-|H12    |94 93 |2       |216             |:x:        |1/1           |178                |1054696 |:heavy_check_mark:        |P19 P20                    |
-|H13    |96 95 |2       |216             |:x:        |1/1           |127                |269824  |:heavy_check_mark:        |P19 P20                    |
-|A1     |101 |1       |150             |:x:        |1/0           |146                |226888  |:heavy_check_mark:        |P28                        |
-|A2     |105 |1       |150             |:x:        |0/1           |289                |193557  |:x:         |P29                        |
-|A3     |109 |1       |180             |:x:        |0/1           |344                |1098827 |:heavy_check_mark:        |P30                        |
-|A4     |120 |1       |150             |:x:        |1/0           |125                |384975  |:x:         |P31                        |
-|A5     |121 |1       |150             |:x:        |1/0           |1                  |77      |:heavy_check_mark:        |P32                        |
-|A6     |122 |1       |100             |:x:        |0/1           |51                 |154398  |:heavy_check_mark:        |P33                        |
-|A7     |113 |1       |150             |:x:        |0/1           |55                 |54741   |:heavy_check_mark:        |P34                        |
-|A8     |151 |1       |150             |:x:        |0/1           |60                 |189141  |:x:         |P35                        |
-|R1     |54 51 53 52 |4       |522             |:heavy_check_mark:       |1/6           |834                |6203065 |:heavy_check_mark:        |P36 P37 P38 P39 P40 P41 P42|
-|R2     |102 |1       |320             |:heavy_check_mark:       |2/2           |367                |1161570 |:heavy_check_mark:        |P43                        |
-|R3     |108 |1       |616             |:heavy_check_mark:       |0/1           |243                |750745  |:heavy_check_mark:        |P44                        |
-|R4     |21 24 22 23 |4       |522             |:heavy_check_mark:       |:heavy_minus_sign:             |371                |387195  |:x:         |:heavy_minus_sign:                          |
-|R5     |73 72 71 |3       |600             |:heavy_check_mark:       |:heavy_minus_sign:             |179                |1583750 |:x:         |:heavy_minus_sign:                          |
-|F1     |23 |1       |150             |:heavy_check_mark:       |2/0           |450                |631193  |:x:         |P46                        |
-|F2     |24 |1       |150             |:heavy_check_mark:       |:heavy_minus_sign:             |450                |631193  |:x:         |:heavy_minus_sign:                          |
-|C1     |25 |1       |500             |:x:        |:heavy_minus_sign:             |333                |590272  |:x:         |:heavy_minus_sign:                          |
-|C2     |26 |1       |500             |:x:        |:heavy_minus_sign:             |53                 |158256  |:x:         |:heavy_minus_sign:                          |
+|Site ID|#Dev|Site Area (sqft)|Floor Plan|#F/ #M|Duration (Hrs)|#Samples|Annot|Participants|
+|-------|--------|----------------|----------|--------------|-------------------|--------|-----------|-------|
+|H1     |5       |1100            |:heavy_check_mark:       |1/1           |772                |11402870|:heavy_check_mark:        |P1 P2                      |
+|H2     |7       |1100            |:heavy_check_mark:       |2/2           |469                |8333689 |:heavy_check_mark:        |P3 P4 P5 P6                |
+|H3     |3       |1000            |:heavy_check_mark:       |1/1           |463                |4041058 |:heavy_check_mark:        |P7 P8                      |
+|H4     |5       |1200            |:heavy_check_mark:       |1/1           |2635               |24021924|:x:         |P9 P10                     |
+|H5     |2       |1200            |:heavy_check_mark:       |1/1           |2634               |7395189 |:x:         |P11 P12                    |
+|H6     |5       |400             |:heavy_check_mark:       |1/1           |218                |3188644 |:heavy_check_mark:        |P13 P14                    |
+|H7     |2       |400             |:x:        |1/1           |366                |2306882 |:heavy_check_mark:        |P15 P16                    |
+|H8     |5       |1100            |:x:        |2/1           |570                |8676832 |:heavy_check_mark:        |P1 P17 P18                 |
+|H9     |2       |300             |:x:        |1/1           |768                |3894082 |:heavy_check_mark:        |P19 P20                    |
+|H10    |2       |600             |:x:        |2/2           |25                 |70554   |:x:         |P21 P22 P23 P24            |
+|H11    |2       |600             |:x:        |1/2           |86                 |60098   |:x:         |P25 P26 P27                |
+|H12    |2       |216             |:x:        |1/1           |178                |1054696 |:heavy_check_mark:        |P19 P20                    |
+|H13    |2       |216             |:x:        |1/1           |127                |269824  |:heavy_check_mark:        |P19 P20                    |
+|A1     |1       |150             |:x:        |1/0           |146                |226888  |:heavy_check_mark:        |P28                        |
+|A2     |1       |150             |:x:        |0/1           |289                |193557  |:x:         |P29                        |
+|A3     |1       |180             |:x:        |0/1           |344                |1098827 |:heavy_check_mark:        |P30                        |
+|A4     |1       |150             |:x:        |1/0           |125                |384975  |:x:         |P31                        |
+|A5     |1       |150             |:x:        |1/0           |1                  |77      |:heavy_check_mark:        |P32                        |
+|A6     |1       |100             |:x:        |0/1           |51                 |154398  |:heavy_check_mark:        |P33                        |
+|A7     |1       |150             |:x:        |0/1           |55                 |54741   |:heavy_check_mark:        |P34                        |
+|A8     |1       |150             |:x:        |0/1           |60                 |189141  |:x:         |P35                        |
+|R1     |4       |522             |:heavy_check_mark:       |1/6           |834                |6203065 |:heavy_check_mark:        |P36 P37 P38 P39 P40 P41 P42|
+|R2     |1       |320             |:heavy_check_mark:       |2/2           |367                |1161570 |:heavy_check_mark:        |P43                        |
+|R3     |1       |616             |:heavy_check_mark:       |0/1           |243                |750745  |:heavy_check_mark:        |P44                        |
+|R4     |4       |522             |:heavy_check_mark:       |:heavy_minus_sign:             |371                |387195  |:x:         |:heavy_minus_sign:                          |
+|R5     |3       |600             |:heavy_check_mark:       |:heavy_minus_sign:             |179                |1583750 |:x:         |:heavy_minus_sign:                          |
+|F1     |1       |150             |:heavy_check_mark:       |2/0           |450                |631193  |:x:         |P46                        |
+|F2     |1       |150             |:heavy_check_mark:       |:heavy_minus_sign:             |450                |631193  |:x:         |:heavy_minus_sign:                          |
+|C1     |1       |500             |:x:        |:heavy_minus_sign:             |333                |590272  |:x:         |:heavy_minus_sign:                          |
+|C2     |1       |500             |:x:        |:heavy_minus_sign:             |53                 |158256  |:x:         |:heavy_minus_sign:                          |
 
 
 # Reference
