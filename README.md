@@ -15,7 +15,7 @@ In the dataset we have given comprehensive metadata for all the sensors and thei
 | PMS2_5     | Less than 2.5 micron dust particle readings in ppm at time ts                              |
 | PMS10      | Less than 10 micron dust particle readings in ppm at time ts                               |
 | CO2        | Carbon dioxide concentration in ppm at time ts                                             |
-| :x:2        | Nitrogen dioxide concentration in ppm at time ts                                           |
+| NO2        | Nitrogen dioxide concentration in ppm at time ts                                           |
 | CO         | Carbon mo:x:xide concentration in ppm at time ts                                            |
 | VoC        | Volatile organic compounds concentration in parts per billion (ppb) at time ts             |
 | C2H5OH     | Ethyl alcohol concentration in ppb at time ts                                              |
@@ -72,12 +72,12 @@ Execute the following commands to preprocess the air quality measurements from R
 |R1     |54 51 53 52 |4       |522             |:heavy_check_mark:       |1/6           |834                |6203065 |:heavy_check_mark:        |P36 P37 P38 P39 P40 P41 P42|
 |R2     |102 |1       |320             |:heavy_check_mark:       |2/2           |367                |1161570 |:heavy_check_mark:        |P43                        |
 |R3     |108 |1       |616             |:heavy_check_mark:       |0/1           |243                |750745  |:heavy_check_mark:        |P44                        |
-|R4     |21 24 22 23 |4       |522             |:heavy_check_mark:       |-             |371                |387195  |:x:         |-                          |
-|R5     |73 72 71 |3       |600             |:heavy_check_mark:       |-             |179                |1583750 |:x:         |-                          |
+|R4     |21 24 22 23 |4       |522             |:heavy_check_mark:       |:heavy_minus_sign:             |371                |387195  |:x:         |:heavy_minus_sign:                          |
+|R5     |73 72 71 |3       |600             |:heavy_check_mark:       |:heavy_minus_sign:             |179                |1583750 |:x:         |:heavy_minus_sign:                          |
 |F1     |23 |1       |150             |:heavy_check_mark:       |2/0           |450                |631193  |:x:         |P46                        |
-|F2     |24 |1       |150             |:heavy_check_mark:       |-             |450                |631193  |:x:         |-                          |
-|C1     |25 |1       |500             |:x:        |-             |333                |590272  |:x:         |-                          |
-|C2     |26 |1       |500             |:x:        |-             |53                 |158256  |:x:         |-                          |
+|F2     |24 |1       |150             |:heavy_check_mark:       |:heavy_minus_sign:             |450                |631193  |:x:         |:heavy_minus_sign:                          |
+|C1     |25 |1       |500             |:x:        |:heavy_minus_sign:             |333                |590272  |:x:         |:heavy_minus_sign:                          |
+|C2     |26 |1       |500             |:x:        |:heavy_minus_sign:             |53                 |158256  |:x:         |:heavy_minus_sign:                          |
 
 
 # File Structure
