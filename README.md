@@ -41,7 +41,7 @@ The activities and events (**in total 3960 annotations**) are stored in the `Ann
 | Parameters | Description                                                                                |
 |------------|--------------------------------------------------------------------------------------------|
 | <tt>ts</tt>         | Starting timestamp `yyyy/mm/dd HH:MM:SS` of the indoor event or activity             |
-| <tt>Label</tt>          | Activity or event label (e.g., `Frying fish`, `AC off`, `Eating` etc.) with detailed description (if possible) |
+| <tt>Label</tt>          | Activity or event label (e.g., `Frying fish`, `AC off`, etc.) with detailed description (if possible) |
 | <tt>Site</tt>          | `SiteID` of the measurement site that matches with `Customer` in the sensor attributed table  |
 | <tt>Customer</tt>       | Unique participant identifier (`P1`-`P46`) as per [Metadata/Occupants.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Occupants.csv) |
 
