@@ -1,0 +1,89 @@
+Site ID,Devices,#Devices,Site Area (sqft),Floor Plan,#Female/ #Male,Data Duration (Hrs),#Samples,Annotations,Participants
+H1,"41 Kitchen
+42 Bedroom beside
+43 Dining left
+44 Dining right
+45 Parent room",5,1100,yes,1/1,772,11402870,yes,"P1
+P2"
+H2,"13 Ground floor bedroom
+17 Blue room bedside
+16 Blue room north
+14 Bedroom router
+12 Kitchen window
+15 Orange room south
+11 Front of TV",7,1100,yes,2/2,469,8333689,yes,"P3
+P4
+P5
+P6"
+H3,"62 Kitchen RO
+63 Dining
+61 Bed room desk",3,1000,yes,1/1,463,4041058,yes,"P7
+P8"
+H4,"13 Kitchen
+11 Bedroom
+12 Bedroom Ma
+15 Dining room
+14 TV room",5,1200,yes,1/1,2635,24021924,no,"P9
+P10"
+H5,"22 TV room
+21 Dining room",2,1200,yes,1/1,2634,7395189,no,"P11
+P12"
+H6,"114 Space1
+113 Room3
+111 Room1
+112 Room2
+115 Space2",5,400,yes,1/1,218,3188644,yes,"P13
+P14"
+H7,"71 Kitchen door
+72 Dining fridge",2,400,no,1/1,366,2306882,yes,"P15
+P16"
+H8,"84 Dinning fridge
+81 Kitchen
+83 Dinning
+82 Bedoom
+85 bedroom2",5,1100,no,2/1,570,8676832,yes,"P1
+P17
+P18"
+H9,"98 Kitchen
+99 Bedroom",2,300,no,1/1,768,3894082,yes,"P19
+P20"
+H10,"104 Sealdah2
+103 Sealdah1",2,600,no,2/2,25,70554,no,"P21 P22
+P23 P24"
+H11,"107 Dining
+106 Kitchen",2,600,no,1/2,86,60098,no,"P25 P26
+P27"
+H12,"94 Bedroom
+93 Kitchen",2,216,no,1/1,178,1054696,yes,"P19
+P20"
+H13,"96 Bedroom
+95 Kitchen",2,216,no,1/1,127,269824,yes,"P19
+P20"
+A1,101 Study Desk,1,150,no,1/0,146,226888,yes,P28
+A2,105 Study Desk,1,150,no,0/1,289,193557,no,P29
+A3,109 Study Desk,1,180,no,0/1,344,1098827,yes,P30
+A4,120 Study Desk,1,150,no,1/0,125,384975,no,P31
+A5,121 Study Desk,1,150,no,1/0,1,77,yes,P32
+A6,122 Study Desk,1,100,no,0/1,51,154398,yes,P33
+A7,113 On bed,1,150,no,0/1,55,54741,yes,P34
+A8,151 Study Desk,1,150,no,0/1,60,189141,no,P35
+R1,"54 Desk4
+51 Desk1
+53 Desk3
+52 Desk2",4,522,yes,1/6,834,6203065,yes,"P36 P37
+P38 P39
+P40 P41
+P42"
+R2,102 Desk  Lab 319,1,320,yes,2/2,367,1161570,yes,P43
+R3,108 Left Desk,1,616,yes,0/1,243,750745,yes,P44
+R4,"21 Desk1
+24 Desk4
+22 Desk2
+23 Desk3",4,522,yes,-,371,387195,no,-
+R5,"73 Desk3
+72 Desk2
+71 Desk1",3,600,yes,-,179,1583750,no,-
+F1,23 Kitchen,1,150,yes,2/0,450,631193,no,P46
+F2,24 Kitchen,1,150,yes,-,450,631193,no,-
+C1,25 Teacher Desk,1,500,no,-,333,590272,no,-
+C2,26 Teacher Desk,1,500,no,-,53,158256,no,-
