@@ -61,49 +61,49 @@ Execute the following commands to preprocess the air quality measurements from R
 * Compute Satistical Features from the Cleaned Dataset
     > ```python compute_feat.py --customer {SiteID} --workers #cpus```
 
-For convinence, we have provided the Makefile with the below commands to process the dataset from raw csvs (`./Data` folder) to processed csvs (`./Processed` folder). The repository contains all the processed files. However, the raw csvs can be downloaded and placed in the `./Data` folder from [Raw Dataset Files](https://iitkgpacin-my.sharepoint.com/:u:/g/personal/pkarmakar_kgpian_iitkgp_ac_in/EUJjN1c_gU9Jjh2Rj7ghDx8BZ0QWS42mP7gHXU80lHlmjg?e=nzshah) if needed.
+For convinence, we have provided the Makefile with the below commands to process the dataset from raw csvs (`./Data` folder) to processed csvs (`./Processed` folder). The repository contains all the processed files. However, the raw csvs can be downloaded and placed in the `./Data` folder from [Raw Data Files](https://iitkgpacin-my.sharepoint.com/:u:/g/personal/pkarmakar_kgpian_iitkgp_ac_in/EUJjN1c_gU9Jjh2Rj7ghDx8BZ0QWS42mP7gHXU80lHlmjg?e=nzshah) if needed.
 ```bash
 make preprocess
 ```
 
-## Preprocessing & Cleaning Steps
+## Preprocessing Steps
 
 # File Structure
 ```
 .
 ├── ./Assets
 │   └── ./Assets/system_diagram.png
-├── ./Data                                 /* Raw Dataset
+├── ./Data                                                               /* Raw Dataset
 │   ├── ./Data/A1
 │   │   └── ./Data/A1/101_Study_Desk.csv
 │   ├── ./Data/H1
 │   │   ├── ./Data/H1/41_Kitchen.csv
-│   │   ├── ./Data/H1/[ID_Loc].csv         /* Files
+│   │   ├── ./Data/H1/[ID_Loc].csv                                       /* Files
 │   │   └── ./Data/H1/45_Parent_room.csv
-│   └── ./Data/[Site]                      /* Directories
+│   └── ./Data/[Site]                                                    /* Directories
 │       └── ./Data/[Site]/[ID_Loc].csv
 ├── ./Merged
 │   ├── ./Merged/data_A1.csv
-│   └── ./Merged/data_[Site].csv           /* Files
-├── ./Processed                            /* Processed Dataset
+│   └── ./Merged/data_[Site].csv                                         
+├── ./Processed                                                          /* Processed Dataset
 │   ├── ./Processed/A1
 │   │   ├── ./Processed/A1/2023_06_10
 │   │   │   └── ./Processed/A1/2023_06_10/101_Study_Desk.csv
 │   │   ├── ./Processed/A1/[Date]
-│   │   │   └── ./Processed/A1/[Date]/[ID_Loc].csv  /* Files
+│   │   │   └── ./Processed/A1/[Date]/[ID_Loc].csv                       
 │   │   └── ./Processed/A1/2023_06_16
 │   │       └── ./Processed/A1/2023_06_16/101_Study_Desk.csv
-│   └── ./Processed/[Site]                 /* Directories
+│   └── ./Processed/[Site]                                               
 │       └── ./Processed/[Site]/[Date]
 │           └── ./Processed/[Site]/[Date]/[ID_Loc].csv
 ├── ./Features
 │   ├── ./Features/A1
 │   │   ├── ./Features/A1/2023_06_10_101_Study_Desk.csv
-│   │   ├── ./Features/A1/[Date_ID_Loc].csv         /* Files
+│   │   ├── ./Features/A1/[Date_ID_Loc].csv                              
 │   │   └── ./Features/A1/2023_06_16_101_Study_Desk.csv
-│   └── ./Features/[Site]                  /* Directories
+│   └── ./Features/[Site]                                                
 │       └── ./Features/A2/[Date_ID_Loc].csv
-├── ./Metadata
+├── ./Metadata                                                           /* Metadata
 │   ├── ./Metadata/Annotations.csv
 │   ├── ./Metadata/Occupants.csv
 │   └── ./Metadata/Site_wise_details.csv
@@ -132,7 +132,8 @@ make preprocess
 ```
 
 
-# Dataset Details
+# Dataset Diversity
+
 |Site ID|#Dev|Site Area (sqft)|Floor Plan|#F/ #M|Duration (Hrs)|#Samples|Annot|Participants|
 |-------|--------|----------------|----------|--------------|-------------------|--------|-----------|-------|
 |H1     |5       |1100            |:heavy_check_mark:       |1/1           |772                |11402870|:heavy_check_mark:        |P1 P2                      |
@@ -166,6 +167,10 @@ make preprocess
 |C1     |1       |500             |:heavy_minus_sign:        |:heavy_minus_sign:             |333                |590272  |:heavy_minus_sign:         |:heavy_minus_sign:                          |
 |C2     |1       |500             |:heavy_minus_sign:        |:heavy_minus_sign:             |53                 |158256  |:heavy_minus_sign:         |:heavy_minus_sign:                          |
 
+The above table summarizes the overall deployment, user participantion, and data collection scale across 30 diverse sites spread across four geographic regions in India. The processed dataset is stored in `./Processed` folder. The corresponding activity annotations and metadata is stored in the `./Metadata` folder of the repository. Notably, the raw data files can be downloaded from [here](https://iitkgpacin-my.sharepoint.com/:u:/g/personal/pkarmakar_kgpian_iitkgp_ac_in/EUJjN1c_gU9Jjh2Rj7ghDx8BZ0QWS42mP7gHXU80lHlmjg?e=nzshah).
+
+# License and Consent
+The dataset is free to download and can be used with `GNU Affero General Public License` for non-commercial purposes. All participants signed forms consenting to the use of collected pollutant measurements and activity labels for non-commercial research purposes. The institute's ethical review committee has approved the field study (`Order No: IIT/SRIC/DEAN/2023`, Dated July 31, 2023). Moreover, we have made significant efforts to anonymize the participants to preserve privacy while providing the necessary information to encourage future research with the dataset.
 
 # Reference
 To refer the DALTON-dataset, please cite the following work.
