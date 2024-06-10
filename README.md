@@ -33,7 +33,7 @@ We have given comprehensive metadata for all the sensors and their placemant in 
 | <tt>C2H5OH</tt>     | Ethyl alcohol concentration in ppb at time ts                                              |
 | <tt>ID</tt>         | Unique identifier of the deployed sensor                                      |
 | <tt>Loc</tt>        | Location of DALTON sensor in the indoor environment                                        |
-| <tt>Customer</tt>   | Participant name of the measurement site. Replace with `SiteID` to preserve privacy (`H1` - `H13`,`A1` - `A8`,`R1` - `R5`,`F1` - `F2`,`C1` - `C2`,) |
+| <tt>Customer</tt>   | Participant name of the measurement site. Replace with `SiteID` to preserve privacy (`H1` - `H13`,`A1` - `A8`,`R1` - `R5`,`F1` - `F2`,`C1` - `C2`) as per [Metadata/Site_wise_details.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Site_wise_details.csv) |
 | <tt>Ph</tt>         | Phone number of the customer for urgent contact. Replaced with `XXXX` to preserve privacy    |
 
 The activities and events (**in total 3960 annotations**) are stored in the `Annotations.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder. As annotation may come from different occupants from the same site, we have given unique identifier to each participant (`P1` - `P46`). Each annotation is comprised of the following values.
@@ -43,7 +43,7 @@ The activities and events (**in total 3960 annotations**) are stored in the `Ann
 | <tt>ts</tt>         | Starting timestamp `yyyy/mm/dd HH:MM:SS` of the indoor event or activity             |
 | <tt>Label</tt>          | Activity or event label with detailed description (if possible) |
 | <tt>Site</tt>          | `SiteID` of the measurement site. Match with `Customer` in the sensor attributed table  |
-| <tt>Customer</tt>       | Unique participant identifier (`P1` - `P46`) as per [./Metadata/Occupants.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Occupants.csv) |
+| <tt>Customer</tt>       | Unique participant identifier (`P1` - `P46`) as per [Metadata/Occupants.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Occupants.csv) |
 
 The annotations can be associated with the sensor readings of any site to analyse the impact of indoor events and activities on the air pollution dynamics.
 
@@ -74,7 +74,7 @@ The dataset is cleaned and organised with the above proprocessing pipeline. Thre
 
 + `Valid` : A binary (1/0) column that represents whether the all the pollution readings are within operational limit of the sensors and no sensor is faulty.
 + `Valid_CO2` : A binary (1/0) column that represents whether CO2 sensor is working properly as it frequently get impacted due to electrical surges in the indoor site.
-+ `bkps` : A binary column that marks change points in the data. the change points (or also know as breakpoints) are computed with the Kernel change point detection ([KLCPD](https://centre-borelli.github.io/ruptures-docs/user-guide/detection/kernelcpd/)) algorithm from the ruptures python package.
++ `bkps` : A binary column that marks change points in the data. The change points (or also know as breakpoints) are computed with the Kernel change point detection ([KLCPD](https://centre-borelli.github.io/ruptures-docs/user-guide/detection/kernelcpd/)) algorithm from the ruptures python package.
 
 Each raw file is processed with the above pipeline and stored in the `./Processed` folder.
 
