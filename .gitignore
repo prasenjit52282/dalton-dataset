@@ -3,17 +3,17 @@
 #folders
 /Data/*
 /Raw
-/Processed/*
+# /Processed/*
 /Features/*
 /Merged/*
 
-#Exclude
-!Processed/H1
-# !Processed/H3
-!Processed/C1
-!Processed/F1
-!Processed/R1
-!Processed/A1
+# #Exclude
+# !Processed/H1
+# # !Processed/H3
+# !Processed/C1
+# !Processed/F1
+# !Processed/R1
+# !Processed/A1
 
 
 !/Data/.gitkeep
