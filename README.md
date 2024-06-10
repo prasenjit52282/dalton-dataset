@@ -6,7 +6,7 @@ We present spatiotemporal measurements of air quality from 30 indoor sites over 
 </p>
 In the dataset we have given comprehensive metadata for all the sensors and their placemant. The collected attributes from each sensor is as shown below.
 
-| `Parameters` | `Description`                                                                                |
+| Parameters | Description                                                                                |
 |------------|--------------------------------------------------------------------------------------------|
 | ts         | Timestamp (yyyy/mm/dd HH:MM:SS) from the ESP32 MCU after reading sensor values             |
 | T          | Temperature reading of the indoor environment in celsius at time ts                        |
@@ -15,8 +15,8 @@ In the dataset we have given comprehensive metadata for all the sensors and thei
 | PMS2_5     | Less than 2.5 micron dust particle readings in ppm at time ts                              |
 | PMS10      | Less than 10 micron dust particle readings in ppm at time ts                               |
 | CO2        | Carbon dioxide concentration in ppm at time ts                                             |
-| NO2        | Nitrogen dioxide concentration in ppm at time ts                                           |
-| CO         | Carbon monoxide concentration in ppm at time ts                                            |
+| :x:2        | Nitrogen dioxide concentration in ppm at time ts                                           |
+| CO         | Carbon mo:x:xide concentration in ppm at time ts                                            |
 | VoC        | Volatile organic compounds concentration in parts per billion (ppb) at time ts             |
 | C2H5OH     | Ethyl alcohol concentration in ppb at time ts                                              |
 | ID         | Unique identifier of the deployed \ourmethod{} sensor                                      |
@@ -46,38 +46,38 @@ Execute the following commands to preprocess the air quality measurements from R
 
 
 # Dataset Details
-|Site ID|Dev IDs                                                                                                                                |#Dev|Site Area (sqft)|Floor Plan|#Female/ #Male|Data Duration (Hrs)|#Samples|Annot|Participants               |
+|Site ID|Dev IDs                                                                                                                                |#Dev|Site Area (sqft)|Floor Plan|#F/ #M|Duration (Hrs)|#Samples|Annot|Participants               |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------|--------|----------------|----------|--------------|-------------------|--------|-----------|---------------------------|
-|H1     |41 42 43 44 45 |5       |1100            |yes       |1/1           |772                |11402870|yes        |P1 P2                      |
-|H2     |13 17 16 14 12 15 |7       |1100            |yes       |2/2           |469                |8333689 |yes        |P3 P4 P5 P6                |
-|H3     |62 63 61 |3       |1000            |yes       |1/1           |463                |4041058 |yes        |P7 P8                      |
-|H4     |13 11 12 15 14 |5       |1200            |yes       |1/1           |2635               |24021924|no         |P9 P10                     |
-|H5     |22 21 |2       |1200            |yes       |1/1           |2634               |7395189 |no         |P11 P12                    |
-|H6     |114 113 111 112 115 |5       |400             |yes       |1/1           |218                |3188644 |yes        |P13 P14                    |
-|H7     |71 72 |2       |400             |no        |1/1           |366                |2306882 |yes        |P15 P16                    |
-|H8     |84 81 83 82 85 |5       |1100            |no        |2/1           |570                |8676832 |yes        |P1 P17 P18                 |
-|H9     |98 99 |2       |300             |no        |1/1           |768                |3894082 |yes        |P19 P20                    |
-|H10    |104 103 |2       |600             |no        |2/2           |25                 |70554   |no         |P21 P22 P23 P24            |
-|H11    |107 106 |2       |600             |no        |1/2           |86                 |60098   |no         |P25 P26 P27                |
-|H12    |94 93 |2       |216             |no        |1/1           |178                |1054696 |yes        |P19 P20                    |
-|H13    |96 95 |2       |216             |no        |1/1           |127                |269824  |yes        |P19 P20                    |
-|A1     |101 |1       |150             |no        |1/0           |146                |226888  |yes        |P28                        |
-|A2     |105 |1       |150             |no        |0/1           |289                |193557  |no         |P29                        |
-|A3     |109 |1       |180             |no        |0/1           |344                |1098827 |yes        |P30                        |
-|A4     |120 |1       |150             |no        |1/0           |125                |384975  |no         |P31                        |
-|A5     |121 |1       |150             |no        |1/0           |1                  |77      |yes        |P32                        |
-|A6     |122 |1       |100             |no        |0/1           |51                 |154398  |yes        |P33                        |
-|A7     |113 |1       |150             |no        |0/1           |55                 |54741   |yes        |P34                        |
-|A8     |151 |1       |150             |no        |0/1           |60                 |189141  |no         |P35                        |
-|R1     |54 51 53 52 |4       |522             |yes       |1/6           |834                |6203065 |yes        |P36 P37 P38 P39 P40 P41 P42|
-|R2     |102 |1       |320             |yes       |2/2           |367                |1161570 |yes        |P43                        |
-|R3     |108 |1       |616             |yes       |0/1           |243                |750745  |yes        |P44                        |
-|R4     |21 24 22 23 |4       |522             |yes       |-             |371                |387195  |no         |-                          |
-|R5     |73 72 71 |3       |600             |yes       |-             |179                |1583750 |no         |-                          |
-|F1     |23 |1       |150             |yes       |2/0           |450                |631193  |no         |P46                        |
-|F2     |24 |1       |150             |yes       |-             |450                |631193  |no         |-                          |
-|C1     |25 |1       |500             |no        |-             |333                |590272  |no         |-                          |
-|C2     |26 |1       |500             |no        |-             |53                 |158256  |no         |-                          |
+|H1     |41 42 43 44 45 |5       |1100            |:heavy_check_mark:       |1/1           |772                |11402870|:heavy_check_mark:        |P1 P2                      |
+|H2     |13 17 16 14 12 15 |7       |1100            |:heavy_check_mark:       |2/2           |469                |8333689 |:heavy_check_mark:        |P3 P4 P5 P6                |
+|H3     |62 63 61 |3       |1000            |:heavy_check_mark:       |1/1           |463                |4041058 |:heavy_check_mark:        |P7 P8                      |
+|H4     |13 11 12 15 14 |5       |1200            |:heavy_check_mark:       |1/1           |2635               |24021924|:x:         |P9 P10                     |
+|H5     |22 21 |2       |1200            |:heavy_check_mark:       |1/1           |2634               |7395189 |:x:         |P11 P12                    |
+|H6     |114 113 111 112 115 |5       |400             |:heavy_check_mark:       |1/1           |218                |3188644 |:heavy_check_mark:        |P13 P14                    |
+|H7     |71 72 |2       |400             |:x:        |1/1           |366                |2306882 |:heavy_check_mark:        |P15 P16                    |
+|H8     |84 81 83 82 85 |5       |1100            |:x:        |2/1           |570                |8676832 |:heavy_check_mark:        |P1 P17 P18                 |
+|H9     |98 99 |2       |300             |:x:        |1/1           |768                |3894082 |:heavy_check_mark:        |P19 P20                    |
+|H10    |104 103 |2       |600             |:x:        |2/2           |25                 |70554   |:x:         |P21 P22 P23 P24            |
+|H11    |107 106 |2       |600             |:x:        |1/2           |86                 |60098   |:x:         |P25 P26 P27                |
+|H12    |94 93 |2       |216             |:x:        |1/1           |178                |1054696 |:heavy_check_mark:        |P19 P20                    |
+|H13    |96 95 |2       |216             |:x:        |1/1           |127                |269824  |:heavy_check_mark:        |P19 P20                    |
+|A1     |101 |1       |150             |:x:        |1/0           |146                |226888  |:heavy_check_mark:        |P28                        |
+|A2     |105 |1       |150             |:x:        |0/1           |289                |193557  |:x:         |P29                        |
+|A3     |109 |1       |180             |:x:        |0/1           |344                |1098827 |:heavy_check_mark:        |P30                        |
+|A4     |120 |1       |150             |:x:        |1/0           |125                |384975  |:x:         |P31                        |
+|A5     |121 |1       |150             |:x:        |1/0           |1                  |77      |:heavy_check_mark:        |P32                        |
+|A6     |122 |1       |100             |:x:        |0/1           |51                 |154398  |:heavy_check_mark:        |P33                        |
+|A7     |113 |1       |150             |:x:        |0/1           |55                 |54741   |:heavy_check_mark:        |P34                        |
+|A8     |151 |1       |150             |:x:        |0/1           |60                 |189141  |:x:         |P35                        |
+|R1     |54 51 53 52 |4       |522             |:heavy_check_mark:       |1/6           |834                |6203065 |:heavy_check_mark:        |P36 P37 P38 P39 P40 P41 P42|
+|R2     |102 |1       |320             |:heavy_check_mark:       |2/2           |367                |1161570 |:heavy_check_mark:        |P43                        |
+|R3     |108 |1       |616             |:heavy_check_mark:       |0/1           |243                |750745  |:heavy_check_mark:        |P44                        |
+|R4     |21 24 22 23 |4       |522             |:heavy_check_mark:       |-             |371                |387195  |:x:         |-                          |
+|R5     |73 72 71 |3       |600             |:heavy_check_mark:       |-             |179                |1583750 |:x:         |-                          |
+|F1     |23 |1       |150             |:heavy_check_mark:       |2/0           |450                |631193  |:x:         |P46                        |
+|F2     |24 |1       |150             |:heavy_check_mark:       |-             |450                |631193  |:x:         |-                          |
+|C1     |25 |1       |500             |:x:        |-             |333                |590272  |:x:         |-                          |
+|C2     |26 |1       |500             |:x:        |-             |53                 |158256  |:x:         |-                          |
 
 
 # File Structure
@@ -116,7 +116,7 @@ Execute the following commands to preprocess the air quality measurements from R
 │   └── ./Features/[Site]                  /* Directories
 │       └── ./Features/A2/[Date_ID_Loc].csv
 ├── ./Metadata
-│   ├── ./Metadata/Annotations.csv
+│   ├── ./Metadata/An:x:tations.csv
 │   ├── ./Metadata/Occupants.csv
 │   └── ./Metadata/Site_wise_details.csv
 ├── ./library
