@@ -67,6 +67,9 @@ make preprocess
 ```
 
 ## Preprocessing Steps
+<p align="center">
+      <img src="./Assets/Preprocess.png" width="100%"/>
+</p>
 
 # File Structure
 
