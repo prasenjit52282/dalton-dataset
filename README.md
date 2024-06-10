@@ -43,7 +43,7 @@ The activities and events (**in total 3960 annotations**) are stored in the `Ann
 | <tt>ts</tt>         | Starting timestamp `yyyy/mm/dd HH:MM:SS` of the indoor event or activity             |
 | <tt>Label</tt>          | Activity or event label with detailed description (if possible) |
 | <tt>Site</tt>          | `SiteID` of the measurement site. Match with `Customer` in the sensor attributed table  |
-| <tt>Customer</tt>       | Unique participant identifier (`P1` - `P46`) |
+| <tt>Customer</tt>       | Unique participant identifier (`P1` - `P46`) as per [./Metadata/Occupants.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Occupants.csv) |
 
 The annotations can be associated with the sensor readings of any site to analyse the impact of indoor events and activities on the air pollution dynamics.
 
@@ -58,8 +58,8 @@ Execute the following commands to preprocess the air quality measurements from R
     > ```python preprocess_data.py --customer {SiteID} --workers #cpus```
 * Mark BreakPoints in the Data for a Measurement Site
     > ```python mark_breakpoints.py --customer {SiteID} --workers #cpus  [--plot]```
-* Compute Satistical Features from the Cleaned Dataset
-    > ```python compute_feat.py --customer {SiteID} --workers #cpus```
+<!-- * Compute Satistical Features from the Cleaned Dataset
+    > ```python compute_feat.py --customer {SiteID} --workers #cpus``` -->
 
 For convinence, we have provided the Makefile with the below commands to process the dataset from raw csvs (`./Data` folder) to processed csvs (`./Processed` folder). The repository contains all the processed files. However, the raw csvs can be downloaded and placed in the `./Data` folder from [Raw Data Files](https://iitkgpacin-my.sharepoint.com/:u:/g/personal/pkarmakar_kgpian_iitkgp_ac_in/EUJjN1c_gU9Jjh2Rj7ghDx8BZ0QWS42mP7gHXU80lHlmjg?e=nzshah) if needed.
 ```bash
@@ -70,6 +70,13 @@ make preprocess
 <p align="center">
       <img src="./Assets/Preprocess.png" width="100%"/>
 </p>
+The dataset is cleaned and organised with the above proprocessing pipeline. Three new columns are computed from the sensor readings as shown in the figure. The utility of the derived columns are as follows:
+
++ `Valid` : A binary (1/0) column that represents whether the all the pollution readings are within operational limit of the sensors and no sensor is faulty.
++ `Valid_CO2` : A binary (1/0) column that represents whether CO2 sensor is working properly as it frequently get impacted due to electrical surges in the indoor site.
++ `bkps` : A binary column that marks change points in the data. the change points (or also know as breakpoints) are computed with the Kernel change point detection ([KLCPD](https://centre-borelli.github.io/ruptures-docs/user-guide/detection/kernelcpd/)) algorithm from the ruptures python package.
+
+Each raw file is processed with the above pipeline and stored in the `./Processed` folder.
 
 # File Structure
 
