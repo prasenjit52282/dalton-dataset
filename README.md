@@ -31,9 +31,9 @@ We have given comprehensive metadata for all the sensors and their placemant in 
 | <tt>CO</tt>         | Carbon monoxide concentration in ppm at time ts                                            |
 | <tt>VoC</tt>        | Volatile organic compounds concentration in parts per billion (ppb) at time ts             |
 | <tt>C2H5OH</tt>     | Ethyl alcohol concentration in ppb at time ts                                              |
-| <tt>ID</tt>         | Unique identifier of the deployed sensor                                      |
-| <tt>Loc</tt>        | Location of the sensor in the indoor environment                                        |
-| <tt>Customer</tt>   | Participant name of the measurement site, replaced with `SiteID` to preserve privacy (`H1` - `H13`,`A1` - `A8`,`R1` - `R5`,`F1` - `F2`,`C1` - `C2`) as per [Metadata/Site_wise_details.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Site_wise_details.csv) |
+| <tt>ID</tt>         | Unique identifier of the deployed sensor (e.g., `41`, `42`, etc.)                                     |
+| <tt>Loc</tt>        | Location of the sensor in the indoor environment (e.g., `Kitchen`, `Bedroom`, etc.)                                       |
+| <tt>Customer</tt>   | Participant name of the measurement site, replaced with `SiteID` to preserve privacy (`H1`-`H13`, `A1`-`A8`, `R1`-`R5`, `F1`, `F2`, `C1`, `C2`) as per [Metadata/Site_wise_details.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Site_wise_details.csv) |
 | <tt>Ph</tt>         | Phone number of the customer for urgent contact, replaced with `XXXX` to preserve privacy    |
 
 The activities and events (**in total 3960 annotations**) are stored in the `Annotations.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder. As annotation may come from different occupants from the same site, we have given unique identifier to each participant (`P1` - `P46`). Each annotation is comprised of the following values.
@@ -41,9 +41,9 @@ The activities and events (**in total 3960 annotations**) are stored in the `Ann
 | Parameters | Description                                                                                |
 |------------|--------------------------------------------------------------------------------------------|
 | <tt>ts</tt>         | Starting timestamp `yyyy/mm/dd HH:MM:SS` of the indoor event or activity             |
-| <tt>Label</tt>          | Activity or event label with detailed description (if possible) |
+| <tt>Label</tt>          | Activity or event label (e.g., `Frying fish`, `AC off`, `Eating` etc.) with detailed description (if possible) |
 | <tt>Site</tt>          | `SiteID` of the measurement site that matches with `Customer` in the sensor attributed table  |
-| <tt>Customer</tt>       | Unique participant identifier (`P1` - `P46`) as per [Metadata/Occupants.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Occupants.csv) |
+| <tt>Customer</tt>       | Unique participant identifier (`P1`-`P46`) as per [Metadata/Occupants.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Occupants.csv) |
 
 The annotations can be associated with the sensor readings of any site to analyse the impact of indoor events and activities on the air pollution dynamics.
 
