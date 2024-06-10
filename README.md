@@ -8,21 +8,21 @@ In the dataset we have given comprehensive metadata for all the sensors and thei
 
 | Parameters | Description                                                                                |
 |------------|--------------------------------------------------------------------------------------------|
-| ts         | Timestamp (yyyy/mm/dd HH:MM:SS) from the ESP32 MCU after reading sensor values             |
-| T          | Temperature reading of the indoor environment in celsius at time ts                        |
-| H          | Humidity reading of the indoor environment in percentage at time ts                        |
-| PMS1       | Less than 1 micron dust particle readings in parts per million (ppm) at time ts            |
-| PMS2_5     | Less than 2.5 micron dust particle readings in ppm at time ts                              |
-| PMS10      | Less than 10 micron dust particle readings in ppm at time ts                               |
-| CO2        | Carbon dioxide concentration in ppm at time ts                                             |
-| NO2        | Nitrogen dioxide concentration in ppm at time ts                                           |
-| CO         | Carbon mo:x:xide concentration in ppm at time ts                                            |
-| VoC        | Volatile organic compounds concentration in parts per billion (ppb) at time ts             |
-| C2H5OH     | Ethyl alcohol concentration in ppb at time ts                                              |
-| ID         | Unique identifier of the deployed \ourmethod{} sensor                                      |
-| Loc        | Location of DALTON sensor in the indoor environment                                        |
-| Customer   | The name of the occupant who participated during the sensor deployment in his indoor space |
-| Ph         | Phone number of the customer for urgent contact. Replaced with XXXX to preserve privacy    |
+| <tt>ts</tt>         | Timestamp (yyyy/mm/dd HH:MM:SS) from the ESP32 MCU after reading sensor values             |
+| <tt>T</tt>          | Temperature reading of the indoor environment in celsius at time ts                        |
+| <tt>H</tt>          | Humidity reading of the indoor environment in percentage at time ts                        |
+| <tt>PMS1</tt>       | Less than 1 micron dust particle readings in parts per million (ppm) at time ts            |
+| <tt>PMS2_5</tt>     | Less than 2.5 micron dust particle readings in ppm at time ts                              |
+| <tt>PMS10</tt>      | Less than 10 micron dust particle readings in ppm at time ts                               |
+| <tt>CO2</tt>        | Carbon dioxide concentration in ppm at time ts                                             |
+| <tt>NO2</tt>        | Nitrogen dioxide concentration in ppm at time ts                                           |
+| <tt>CO</tt>         | Carbon mo:x:xide concentration in ppm at time ts                                            |
+| <tt>VoC</tt>        | Volatile organic compounds concentration in parts per billion (ppb) at time ts             |
+| <tt>C2H5OH</tt>     | Ethyl alcohol concentration in ppb at time ts                                              |
+| <tt>ID</tt>         | Unique identifier of the deployed \ourmethod{} sensor                                      |
+| <tt>Loc</tt>        | Location of DALTON sensor in the indoor environment                                        |
+| <tt>Customer</tt>   | The name of the occupant who participated during the sensor deployment in his indoor space |
+| <tt>Ph</tt>         | Phone number of the customer for urgent contact. Replaced with XXXX to preserve privacy    |
 
 # Installation
 To install the required packages in your python(>=3.11) environment you need to run the below commands:
