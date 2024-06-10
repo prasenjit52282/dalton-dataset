@@ -108,13 +108,6 @@ The compressed file structure by combining similar file paths with placeholders 
 │   └── ./Processed/[Site]                                               
 │       └── ./Processed/[Site]/[Date]
 │           └── ./Processed/[Site]/[Date]/[ID_Loc].csv
-├── ./Features
-│   ├── ./Features/A1
-│   │   ├── ./Features/A1/2023_06_10_101_Study_Desk.csv
-│   │   ├── ./Features/A1/[Date_ID_Loc].csv                              
-│   │   └── ./Features/A1/2023_06_16_101_Study_Desk.csv
-│   └── ./Features/[Site]                                                
-│       └── ./Features/A2/[Date_ID_Loc].csv
 ├── ./Metadata                                                           /* Metadata
 │   ├── ./Metadata/Annotations.csv
 │   ├── ./Metadata/Occupants.csv
