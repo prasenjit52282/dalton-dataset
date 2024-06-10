@@ -1,8 +1,8 @@
 # DALTON-Dataset
-We present spatiotemporal measurements of air quality from 30 indoor sites over six months during summer and winter seasons. The sites are geographically located across four regions of type: rural, suburban, and urban, covering the typical low to middle-income population in India. The dataset contains various types of indoor environments (e.g., studio apartments, classrooms, research laboratories, food canteens, and residential households), and can provide the basis for data-driven learning model research aimed at coping with unique pollution patterns in developing countries. Download [Whole Dataset](https://iitkgpacin-my.sharepoint.com/:u:/g/personal/pkarmakar_kgpian_iitkgp_ac_in/EUJjN1c_gU9Jjh2Rj7ghDx8BZ0QWS42mP7gHXU80lHlmjg?e=nzshah).
+We present spatiotemporal measurements of air quality from 30 indoor sites over six months during summer and winter seasons (**89.1M samples, totalling 13646 hours of air quality data from all sites**). The sites are geographically located across four regions of type: rural, suburban, and urban, covering the typical low to middle-income population in India. The dataset contains various types of indoor environments (e.g., studio apartments, classrooms, research laboratories, food canteens, and residential households), and can provide the basis for data-driven learning model research aimed at coping with unique pollution patterns in developing countries. Download [Whole Dataset](https://iitkgpacin-my.sharepoint.com/:u:/g/personal/pkarmakar_kgpian_iitkgp_ac_in/EUJjN1c_gU9Jjh2Rj7ghDx8BZ0QWS42mP7gHXU80lHlmjg?e=nzshah).
 
 <p align="center">
-      <img src="./Assets/system_diagram.png" width="90%"/><br><strong>Fig.1:</strong> Overview of our extensive field study and data collection with multiple air quality monitors in a typical indoor environment.
+      <img src="./Assets/system_diagram.png" width="90%"/><br><strong>Fig.1:</strong> Overview of the field study and data collection with multiple air quality monitors in a typical indoor setup.
 </p>
 In the dataset we have given comprehensive metadata for all the sensors and their placemant. The collected attributes from each sensor is as shown below.
 
@@ -28,6 +28,8 @@ In the dataset we have given comprehensive metadata for all the sensors and thei
 To install the required packages in your python(>=3.11) environment you need to run the below commands:
 ```bash
 git clone https://github.com/prasenjit52282/dalton-dataset.git
+sudo apt-get update
+sudo apt-get install make
 cd dalton-dataset
 pip install -r requirements.txt
 ```
