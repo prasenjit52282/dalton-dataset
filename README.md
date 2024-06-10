@@ -55,9 +55,7 @@ Execute the following commands to preprocess the air quality measurements from R
 │   │   └── ./Data/A1/101_Study_Desk.csv
 │   ├── ./Data/H1
 │   │   ├── ./Data/H1/41_Kitchen.csv
-│   │   ├── ./Data/H1/42_Bedroom_beside.csv
-│   │   ├── ./Data/H1/43_Dining_left.csv
-│   │   ├── ./Data/H1/44_Dining_right.csv
+│   │   ├── ./Data/H1/[ID_Loc].csv         /* Files
 │   │   └── ./Data/H1/45_Parent_room.csv
 │   └── ./Data/[Site]                      /* Directories
 │       └── ./Data/[Site]/[ID_Loc].csv
@@ -68,19 +66,24 @@ Execute the following commands to preprocess the air quality measurements from R
 │   ├── ./Processed/A1
 │   │   ├── ./Processed/A1/2023_06_10
 │   │   │   └── ./Processed/A1/2023_06_10/101_Study_Desk.csv
-│   │   ├── ./Processed/A1/2023_06_11
-│   │   │   └── ./Processed/A1/2023_06_11/101_Study_Desk.csv
-│   │   ├── ./Processed/A1/2023_06_12
-│   │   │   └── ./Processed/A1/2023_06_12/101_Study_Desk.csv
-│   │   ├── ./Processed/A1/2023_06_13
-│   │   │   └── ./Processed/A1/2023_06_13/101_Study_Desk.csv
-│   │   ├── ./Processed/A1/2023_06_14
-│   │   │   └── ./Processed/A1/2023_06_14/101_Study_Desk.csv
+│   │   ├── ./Processed/A1/[Date]
+│   │   │   └── ./Processed/A1/[Date]/[ID_Loc].csv  /* Files
 │   │   └── ./Processed/A1/2023_06_16
 │   │       └── ./Processed/A1/2023_06_16/101_Study_Desk.csv
 │   └── ./Processed/[Site]                 /* Directories
 │       └── ./Processed/[Site]/[Date]
 │           └── ./Processed/[Site]/[Date]/[ID_Loc].csv
+├── ./Features
+│   ├── ./Features/A1
+│   │   ├── ./Features/A1/2023_06_10_101_Study_Desk.csv
+│   │   ├── ./Features/A1/[Date_ID_Loc].csv         /* Files
+│   │   └── ./Features/A1/2023_06_16_101_Study_Desk.csv
+│   └── ./Features/[Site]                  /* Directories
+│       └── ./Features/A2/[Date_ID_Loc].csv
+├── ./Metadata
+│   ├── ./Metadata/Annotations.csv
+│   ├── ./Metadata/Occupants.csv
+│   └── ./Metadata/Site_wise_details.csv
 ├── ./library
 │   ├── ./library/base_metrics.py
 │   ├── ./library/breakpoints.py
@@ -110,10 +113,12 @@ To refer the DALTON-dataset, please cite the following work.
 
 BibTex Reference:
 ```
-@article{karmakar2024communities,
+Coming Soon!
+```
+For questions and general feedback, contact [Prasenjit Karmakar](https://prasenjit52282.github.io/).
+
+<!-- @article{karmakar2024communities,
   title={Indoor Air Quality Dataset with Activities of Daily Living in Low to Middle-income Communities},
   author={Karmakar, Prasenjit and Pradhan, Swadhin and Chakraborty, Sandip},
   year={2024}
-}
-```
-For questions and general feedback, contact [Prasenjit Karmakar](https://prasenjit52282.github.io/).
+} -->
