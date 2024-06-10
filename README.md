@@ -28,13 +28,24 @@ We have given comprehensive metadata for all the sensors and their placemant in 
 | <tt>PMS10</tt>      | Less than 10 micron dust particle readings in ppm at time ts                               |
 | <tt>CO2</tt>        | Carbon dioxide concentration in ppm at time ts                                             |
 | <tt>NO2</tt>        | Nitrogen dioxide concentration in ppm at time ts                                           |
-| <tt>CO</tt>         | Carbon mo:x:xide concentration in ppm at time ts                                            |
+| <tt>CO</tt>         | Carbon monoxide concentration in ppm at time ts                                            |
 | <tt>VoC</tt>        | Volatile organic compounds concentration in parts per billion (ppb) at time ts             |
 | <tt>C2H5OH</tt>     | Ethyl alcohol concentration in ppb at time ts                                              |
 | <tt>ID</tt>         | Unique identifier of the deployed sensor                                      |
 | <tt>Loc</tt>        | Location of DALTON sensor in the indoor environment                                        |
-| <tt>Customer</tt>   | Participant name of the measurement site. Replace with `SiteID` to preserve privacy |
+| <tt>Customer</tt>   | Participant name of the measurement site. Replace with `SiteID` to preserve privacy (`H1` heavy_minus_sign `H13`,`A1` heavy_minus_sign `A8`,`R1` heavy_minus_sign `R5`,`F1` heavy_minus_sign `F2`,`C1` heavy_minus_sign `C2`,) |
 | <tt>Ph</tt>         | Phone number of the customer for urgent contact. Replaced with `XXXX` to preserve privacy    |
+
+The activity and event annotations are stored in the `Annotations.csv` file in [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder. As annotation may come from different occupants from the same site, we have given unique identifier to each participant (`P1` heavy_minus_sign `P46`). Each annotation is comprised of the following values.
+
+| Parameters | Description                                                                                |
+|------------|--------------------------------------------------------------------------------------------|
+| <tt>ts</tt>         | Starting timestamp `yyyy/mm/dd HH:MM:SS` of the indoor event or activity             |
+| <tt>Label</tt>          | Activity or event label with detailed description (if possible) |
+| <tt>Site</tt>          | `SiteID` of the measurement site. Match with `Customer` in the sensor attributed table  |
+| <tt>Customer</tt>       | Unique participant identifier (`P1` heavy_minus_sign `P46`) |
+
+The annotations can be associated with the sensor readings of any site to analyse the impact of indoor events and activities on the air pollution dynamics.
 
 # Dataset Preparation
 
