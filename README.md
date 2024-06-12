@@ -72,9 +72,9 @@ make preprocess
 </p>
 The dataset is cleaned and organised with the above proprocessing pipeline. Three new columns are computed from the sensor readings as shown in the figure. The utility of the derived columns are as follows:
 
-+ `Valid` : A binary (1/0) column that represents whether all the pollutant readings are within operational limit of the sensors and no sensor is faulty.
++ `Valid` : A binary (1/0) column that represents whether all the pollutant readings are within measurement range of the sensors and no sensor is faulty.
 + `Valid_CO2` : A binary (1/0) column that represents whether CO2 sensor is working properly, as it frequently get impacted due to electrical surges in the indoor sites.
-+ `bkps` : A binary column that marks change-points in the data. The change-points (or also know as breakpoints) are computed with the Kernel change point detection ([KLCPD](https://centre-borelli.github.io/ruptures-docs/user-guide/detection/kernelcpd/)) algorithm from the ruptures python package.
++ `bkps` : A binary column (1/0) that marks change-points in the data. The change-points (or also know as breakpoints) are computed with the Kernel change point detection ([KLCPD](https://centre-borelli.github.io/ruptures-docs/user-guide/detection/kernelcpd/)) algorithm from the ruptures python package.
 
 Each raw file is processed with the above pipeline and stored in the `./Processed` folder. Note that the missing segments (> 15 mins) are replaced with `zero` values according to step(3) of the pipeline.
 
