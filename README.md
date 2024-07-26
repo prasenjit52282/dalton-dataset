@@ -183,12 +183,11 @@ To refer the DALTON-dataset, please cite the following work.
 
 BibTex Reference:
 ```
-Coming Soon!
-```
-For questions and general feedback, contact [Prasenjit Karmakar](https://prasenjit52282.github.io/).
-
-<!-- @article{karmakar2024communities,
+@article{karmakar2024indoor,
   title={Indoor Air Quality Dataset with Activities of Daily Living in Low to Middle-income Communities},
   author={Karmakar, Prasenjit and Pradhan, Swadhin and Chakraborty, Sandip},
+  journal={arXiv preprint arXiv:2407.14501},
   year={2024}
-} -->
+}
+```
+For questions and general feedback, contact [Prasenjit Karmakar](https://prasenjit52282.github.io/).
