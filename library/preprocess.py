@@ -37,16 +37,19 @@ def preprocess_fn(d,date):
     d_full['CO2']=d_full.CO2.apply(lambda e:np.nan if e>10000 else e)
     d_full['CO2']=d_full.CO2.interpolate(method='nearest',limit=MAX_MISSING_MINUTES*60)
     d_full['Valid_CO2']=(~d_full['CO2'].isna()).astype('int')
-    
-    #step5.1. replacing all nan values with zero before smoothing
-    d_full.replace(np.nan,0,inplace=True)
 
-    #step5.2. smoothing pollutants with SMOOTHING_WINDOW (i.e., 60 sec) sensitivity
+    #step5.1. smoothing pollutants with SMOOTHING_WINDOW (i.e., 60 sec) sensitivity
     #further rounding up to 4 decimal places
     for pol in POLLUTANTS:
-        d_full[pol]=d_full[pol].rolling(window=SMOOTHING_WINDOW).mean().bfill().round(decimals=4)
+        d_full[pol]=d_full[pol].rolling(window=SMOOTHING_WINDOW).mean().round(decimals=4)
 
-    #step6. geting the timestamp(ts) column back in the dataframe
+    #step5.2. replacing all nan values with zero after smoothing #modified after Reviewer comment (smoothing-->imputing)
+    d_full.replace(np.nan,0,inplace=True)
+
+    #step6.1. remove the phone number column XXXX
+    d_full.drop(columns=['Ph'],inplace=True)
+
+    #step6.2. geting the timestamp(ts) column back in the dataframe
     d_full.reset_index(names='ts',inplace=True)
     
     return d_full
