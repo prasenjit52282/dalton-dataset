@@ -68,15 +68,21 @@ make preprocess
 
 ## Preprocessing Steps
 <p align="center">
-      <img src="./Assets/Preprocess.png" width="100%"/>
+      <img src="./Assets/Preprocess.png" width="100%"/><br><strong>Fig.2:</strong> Data preprocessing pipeline.
 </p>
-The dataset is cleaned and organised with the above proprocessing pipeline. Three new columns are computed from the sensor readings as shown in the figure. The utility of the derived columns are as follows:
+The dataset is cleaned and organised with the above proprocessing pipeline in Fig. 2. Three new columns are computed from the sensor readings as shown in the figure. The utility of the derived columns are as follows:
 
 + `Valid` : A binary (1/0) column that represents whether all the pollutant readings are within measurement range of the sensors and no sensor is faulty.
 + `Valid_CO2` : A binary (1/0) column that represents whether CO2 sensor is working properly, as it frequently get impacted due to electrical surges in the indoor sites.
 + `bkps` : A binary column (1/0) that marks change-points in the data. The change-points (or also know as breakpoints) are computed with the Kernel change point detection ([KLCPD](https://centre-borelli.github.io/ruptures-docs/user-guide/detection/kernelcpd/)) algorithm from the ruptures python package.
 
 Each raw file is processed with the above pipeline and stored in the `./Processed` folder. Note that the missing segments (> 15 mins) are replaced with `zero` values according to step(3 & 4) of the pipeline.
+
+<p align="center">
+      <img src="./Assets/Preprocess_annot.png" width="100%"/><br><strong>Fig.3:</strong> Annotation processing pipeline.
+</p>
+
+The raw annotations are cleaned and processed according to the pipeline shown in Fig. 3. The steps perform generic data cleaning and reformatting, anonymization, segregation of combined annotations, and spelling corrections to ensure the correctness and usability of the annotations. The cleaned annotations are available in the `Annotations_cleaned.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder.
 
 # File Structure
 
@@ -85,6 +91,7 @@ The compressed file structure by combining similar file paths with placeholders 
 .
 ├── ./Assets
 │   ├── ./Assets/Preprocess.png
+│   ├── ./Assets/Preprocess_annot.png
 │   └── ./Assets/system_diagram.png
 ├── ./Data                                                               /* Raw Dataset
 │   ├── ./Data/A1
