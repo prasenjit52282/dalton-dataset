@@ -1,5 +1,5 @@
 # DALTON-Dataset
-We present spatiotemporal measurements of air quality from 30 indoor sites over six months during the summer and winter seasons (**89.1M samples, totaling 13646 hours of air quality data and 3960 activity annotations from 46 participants**). The sites are geographically located across four regions of type: rural, suburban, and urban, covering the typical low to middle-income population in India. The dataset contains various indoor environments (e.g., studio apartments, classrooms, research laboratories, food canteens, and residential households). Fig. 1 shows the overview of the data collection setup in a typical indoor environment. Our dataset provides the basis for data-driven learning model research aimed at coping with unique pollution patterns in developing countries.
+We present spatiotemporal measurements of air quality from 30 indoor sites over six months during the summer and winter seasons (**89.1M samples, totaling 13646 hours of air quality data and 3957 activity annotations from 46 participants**). The sites are geographically located across four regions of type: rural, suburban, and urban, covering the typical low to middle-income population in India. The dataset contains various indoor environments (e.g., studio apartments, classrooms, research laboratories, food canteens, and residential households). Fig. 1 shows the overview of the data collection setup in a typical indoor environment. Our dataset provides the basis for data-driven learning model research aimed at coping with unique pollution patterns in developing countries.
 
 <p align="center">
       <img src="./Assets/system_diagram.png" width="90%"/><br><strong>Fig.1:</strong> Overview of the field study and data collection with multiple air quality monitors in a typical indoor setup.
@@ -36,7 +36,7 @@ We have given comprehensive metadata for all the sensors and their placemant in 
 | <tt>Customer</tt>   | Participant name of the measurement site, replaced with `SiteID` to preserve privacy (`H1`-`H13`, `A1`-`A8`, `R1`-`R5`, `F1`, `F2`, `C1`, `C2`) as per [Metadata/Site_wise_details.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Site_wise_details.csv) |
 | <tt>Ph</tt>         | Phone number of the customer for urgent contact, replaced with `XXXX` to preserve privacy    |
 
-The activities and events (**in total 3960 annotations**) are stored in the `Annotations.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder. As annotation may come from different occupants from the same site, we have given unique identifier to each participant (`P1` - `P46`). Each annotation is comprised of the following values.
+The activities and events (**in total 3957 annotations**) are stored in the `Annotations_cleaned.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder. As annotation may come from different occupants from the same site, we have given unique identifier to each participant (`P1` - `P46`). Each annotation is comprised of the following values.
 
 | Parameters | Description                                                                                |
 |------------|--------------------------------------------------------------------------------------------|
@@ -111,6 +111,7 @@ The compressed file structure by combining similar file paths with placeholders 
 │           └── ./Processed/[Site]/[Date]/[ID_Loc].csv
 ├── ./Metadata                                                           /* Metadata
 │   ├── ./Metadata/Annotations.csv
+│   ├── ./Metadata/Annotations_cleaned.csv
 │   ├── ./Metadata/Occupants.csv
 │   └── ./Metadata/Site_wise_details.csv
 ├── ./library
