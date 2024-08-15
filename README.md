@@ -36,7 +36,7 @@ We have given comprehensive metadata for all the sensors and their placemant in 
 | <tt>Customer</tt>   | Participant name of the measurement site, replaced with `SiteID` to preserve privacy (`H1`-`H13`, `A1`-`A8`, `R1`-`R5`, `F1`, `F2`, `C1`, `C2`) as per [Metadata/Site_wise_details.csv](https://github.com/prasenjit52282/dalton-dataset/blob/main/Metadata/Site_wise_details.csv) |
 | <tt>Ph</tt>         | Phone number of the customer for urgent contact, replaced with `XXXX` to preserve privacy    |
 
-The activities and events (**in total 3957 annotations**) are stored in the `Annotations_cleaned.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder. As annotation may come from different occupants from the same site, we have given unique identifier to each participant (`P1` - `P46`). Each annotation is comprised of the following values.
+The raw activities and events (**in total 3957 annotations**) are stored in the `Annotations.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder. As annotation may come from different occupants from the same site, we have given unique identifier to each participant (`P1` - `P46`). Each annotation is comprised of the following values.
 
 | Parameters | Description                                                                                |
 |------------|--------------------------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ Each raw file is processed with the above pipeline and stored in the `./Processe
       <img src="./Assets/Preprocess_annot.png" width="100%"/><br><strong>Fig.3:</strong> Annotation processing pipeline.
 </p>
 
-The raw annotations are cleaned and processed according to the pipeline shown in Fig. 3. The steps perform generic data cleaning and reformatting, anonymization, segregation of combined annotations, and spelling corrections to ensure the correctness and usability of the annotations. The cleaned annotations are available in the `Annotations_cleaned.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder.
+The raw annotation file `Annotations.csv` is cleaned and processed according to the pipeline shown in Fig. 3. The steps perform generic data cleaning and reformatting, anonymization, segregation of combined annotations, and spelling corrections to ensure the correctness and usability of the annotations. The cleaned annotations are available in the `Annotations_cleaned.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder.
 
 # File Structure
 
