@@ -84,7 +84,7 @@ Each raw file is processed with the above pipeline and stored in the `./Processe
 
 The raw annotation file `Annotations.csv` is cleaned and processed according to the pipeline shown in Fig. 3. The steps perform generic data cleaning and reformatting, anonymization, segregation of combined annotations, and spelling corrections to ensure the correctness and usability of the annotations. The cleaned annotations are available in the `Annotations_cleaned.csv` file of [Metadata](https://github.com/prasenjit52282/dalton-dataset/tree/main/Metadata) folder.
 
-<strong>Note:</strong> Annotated `food` items are in local languages in some cases, based on the mother tongue of the annotator.
+<strong>Note:</strong> Annotated `food` items are in local languages in some cases, based on the mother tongue of the annotator. Some english translations are {'bhindi':'ladies finger','dal':'lentils','posto':'poppy seeds','potol':'pointed gourd','roti':'flat bread','sag':'leafy vegetables', ...}
 
 # File Structure
 
