@@ -196,8 +196,9 @@ BibTex Reference:
 @article{karmakar2024indoor,
   title={Indoor Air Quality Dataset with Activities of Daily Living in Low to Middle-income Communities},
   author={Karmakar, Prasenjit and Pradhan, Swadhin and Chakraborty, Sandip},
-  journal={arXiv preprint arXiv:2407.14501},
-  year={2024}
+  booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year={2024},
+  url={https://openreview.net/forum?id=hceKrY4dfC}
 }
 ```
 For questions and general feedback, contact [Prasenjit Karmakar](https://prasenjit52282.github.io/).
