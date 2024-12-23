@@ -193,12 +193,13 @@ To refer the DALTON-dataset, please cite the following work.
 
 BibTex Reference:
 ```
-@article{karmakar2024indoor,
-  title={Indoor Air Quality Dataset with Activities of Daily Living in Low to Middle-income Communities},
-  author={Karmakar, Prasenjit and Pradhan, Swadhin and Chakraborty, Sandip},
-  booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
-  year={2024},
-  url={https://openreview.net/forum?id=hceKrY4dfC}
+@inproceedings{
+    karmakar2024indoor,
+    title={Indoor Air Quality Dataset with Activities of Daily Living in Low to Middle-income Communities},
+    author={Prasenjit Karmakar and Swadhin Pradhan and Sandip Chakraborty},
+    booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+    year={2024},
+    url={https://openreview.net/forum?id=hceKrY4dfC}
 }
 ```
 For questions and general feedback, contact [Prasenjit Karmakar](https://prasenjit52282.github.io/).
