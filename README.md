@@ -27,7 +27,7 @@ We have given comprehensive metadata for all the sensors and their placemant in 
 | <tt>PMS2_5</tt>     | Less than 2.5 micron dust particle readings in ppm at time ts                              |
 | <tt>PMS10</tt>      | Less than 10 micron dust particle readings in ppm at time ts                               |
 | <tt>CO2</tt>        | Carbon dioxide concentration in ppm at time ts                                             |
-| <tt>NO2</tt>        | Nitrogen dioxide concentration in ppm at time ts                                           |
+| <tt>NO2</tt>        | Nitrogen dioxide concentration in ppb at time ts                                           |
 | <tt>CO</tt>         | Carbon monoxide concentration in ppm at time ts                                            |
 | <tt>VoC</tt>        | Volatile organic compounds concentration in parts per billion (ppb) at time ts             |
 | <tt>C2H5OH</tt>     | Ethyl alcohol concentration in ppb at time ts                                              |
