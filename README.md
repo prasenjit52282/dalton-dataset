@@ -23,9 +23,9 @@ We have given comprehensive metadata for all the sensors and their placemant in 
 | <tt>ts</tt>         | Timestamp `yyyy/mm/dd HH:MM:SS` from the ESP32 MCU after reading sensor values             |
 | <tt>T</tt>          | Temperature reading of the indoor environment in celsius at time ts                        |
 | <tt>H</tt>          | Humidity reading of the indoor environment in percentage at time ts                        |
-| <tt>PMS1</tt>       | Less than 1 micron dust particle readings in parts per million (ppm) at time ts            |
-| <tt>PMS2_5</tt>     | Less than 2.5 micron dust particle readings in ppm at time ts                              |
-| <tt>PMS10</tt>      | Less than 10 micron dust particle readings in ppm at time ts                               |
+| <tt>PMS1</tt>       | Less than 1 micron dust particle readings in 𝜇𝑔/𝑚<sup>3</sup> at time ts            |
+| <tt>PMS2_5</tt>     | Less than 2.5 micron dust particle readings in 𝜇𝑔/𝑚<sup>3</sup> at time ts                              |
+| <tt>PMS10</tt>      | Less than 10 micron dust particle readings in 𝜇𝑔/𝑚<sup>3</sup> at time ts                               |
 | <tt>CO2</tt>        | Carbon dioxide concentration in ppm at time ts                                             |
 | <tt>NO2</tt>        | Nitrogen dioxide concentration in ppb at time ts                                           |
 | <tt>CO</tt>         | Carbon monoxide concentration in ppm at time ts                                            |
