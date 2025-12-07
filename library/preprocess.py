@@ -30,8 +30,8 @@ def preprocess_fn(d,date):
     d_full=d_pol.reindex(filled_ts,method='nearest',limit=MAX_MISSING_MINUTES*60)
     
     #step4.1. marking Valid entries where all sensors have non-null values
-    d_full['Valid']=(~(d_full['T'].isna() & d_full['C2H5OH'].isna() & d_full['CO2'].isna())).astype('int')
-    
+    d_full['Valid'] = d_full[['T', 'C2H5OH', 'CO2']].notna().all(axis=1).astype('int')
+
     #step4.2. marking entries where CO2 sensor was effected by static-electricity
     #similar to step3.2. CO2 missing entries has fill limit of MAX_MISSING_MINUITES (e.g., 15 minutes)
     d_full['CO2']=d_full.CO2.apply(lambda e:np.nan if e>10000 else e)
